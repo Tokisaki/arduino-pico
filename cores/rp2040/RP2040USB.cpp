@@ -83,7 +83,7 @@ static int __usb_task_irq;
   9, TUSB_DESC_INTERFACE, _itfnum, 0, 0, TUSB_CLASS_VENDOR_SPECIFIC, RESET_INTERFACE_SUBCLASS, RESET_INTERFACE_PROTOCOL, _stridx,
 
 
-int usb_hid_poll_interval __attribute__((weak)) = 10;
+int usb_hid_poll_interval __attribute__((weak)) = 1;
 
 const uint8_t *tud_descriptor_device_cb(void) {
     static tusb_desc_device_t usbd_desc_device = {
